@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 5;
+
+    printf("Equal: %d\n", a == b);
+    printf("Not Equal: %d\n", a != b);
+    printf("Greater Than: %d\n", a > b);
+    printf("Less Than: %d\n", a < b);
+    printf("Greater Than or Equal: %d\n", a >= b);
+    printf("Less Than or Equal: %d\n", a <= b);
+
+    return 0;
+}
