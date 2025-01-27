@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 10;
+
+    printf("Are %d and %d equal? %s\n", a, b, (a == b) ? "Yes" : "No");
+
+    return 0;
+}
