@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// Define a structure
+struct Person {
+    char name[50];
+    int age;
+    char city[50];
+};
+
+int main() {
+    // Create a variable of type struct Person
+    struct Person person;
+
+    // Assign values to the members of the structure
+    printf("Enter name: ");
+    scanf("%s", person.name);
+    printf("Enter age: ");
+    scanf("%d", &person.age);
+    printf("Enter city: ");
+    scanf("%s", person.city);
+
+    // Print the values of the structure members
+    printf("\nName: %s\n", person.name);
+    printf("Age: %d\n", person.age);
+    printf("City: %s\n", person.city);
+
+    return 0;
+}
