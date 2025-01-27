@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int radius, height;
+
+    printf("Enter radius: ");
+    scanf("%d", &radius);
+
+    printf("Enter height: ");
+    scanf("%d", &height);
+
+    float volume_cylinder = 3.14159 * radius * radius * height;
+    float volume_sphere = (4 / 3.0) * 3.14159 * radius * radius * radius;
+    float volume_cone = (1 / 3.0) * 3.14159 * radius * radius * height;
+
+    printf("Volume of Cylinder: %f\n", volume_cylinder);
+    printf("Volume of Sphere: %f\n", volume_sphere);
+    printf("Volume of Cone: %f\n", volume_cone);
+
+    return 0;
+}
