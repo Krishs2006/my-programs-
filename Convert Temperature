@@ -1,0 +1,21 @@
+//5. A program to convert temprature 
+ #include <stdio.h>
+
+int main() {
+    float temperature;
+// converting fehrenhit to centigrate//
+    printf("Enter temperature (Fahrenheit): ");
+    scanf("%f", &temperature);
+//formula
+    float centigrade = (temperature - 32) * 5 / 9;
+
+    printf("Temperature (Centigrade): %f\n", centigrade);
+//centigrat to fehrenhite//
+      printf("enter temp. (C): ");
+      scanf("%f",&temperature);
+      
+      float fehrenheit = (temperature*9/5)+32;
+      
+      printf("temperature (fehrenheit): %f\n",fehrenheit);
+    return 0;
+}
