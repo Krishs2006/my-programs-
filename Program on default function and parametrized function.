@@ -1,0 +1,20 @@
+//Program on default function and parameterized function.
+
+#include <stdio.h>
+
+// Default function
+void greet() {
+    printf("Hello, World!\n");
+}
+
+// Parameterized function
+void greetName(char *name) {
+    printf("Hello, %s!\n", name);
+}
+
+int main() {
+    greet();
+    greetName("Sir");
+
+    return 0;
+}
