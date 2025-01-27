@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int marks[6];
+    int i, sum = 0;
+    float percentage;
+
+    // Read marks of six subjects
+    for (i = 0; i < 6; i++) {
+        printf("Enter marks of subject %d: ", i + 1);
+        scanf("%d", &marks[i]);
+        sum += marks[i];
+    }
+
+    // Calculate percentage
+    percentage = (float)sum / 600 * 100;
+
+    // Check if student has passed or failed
+    if (percentage >= 40) {
+        printf("Student has passed with %.2f%%\n", percentage);
+    } else {
+        printf("Student has failed with %.2f%%\n", percentage);
+    }
+
+    return 0;
+}
